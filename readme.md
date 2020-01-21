@@ -6,7 +6,7 @@ ytqa
 
 **ytqa** is a docker image built to be run as a GCP Cloud Run service that is routinely triggered by a Cloud Scheduler job. **ytqa** stores it's output in a GCP Storage bucket and/or publishes it's output to a GCP Pub_Sub topic.
 
-An example of **ytqa** output can be found at: TODO: INSERT GITHUB LINK
+An example of **ytqa** output can be found at: <https://raw.githubusercontent.com/PaulWGraham/ytqa/master/exampleoutput.json>
 
 The installation instructions below cover: uploading the docker image, enabling the needed APIs, creating the Cloud Run service, and creating the Cloud Scheduler job.
 
@@ -30,7 +30,7 @@ Installation:
 
 5. **Download the ytqa project source.**
 
-   Download the ytqa source from TODO: INSERT GITHUB LINK
+   Download the ytqa source from <https://github.com/PaulWGraham/ytqa/archive/master.zip>
 
 6. **Build the ytqa docker image.**
 
@@ -90,7 +90,7 @@ Installation:
 
          (If using a topic to collect ytqa reports.)
 
-      * `GIANTBOMB_API_CALL_DELAY` : {Optional: The delay in seconds between each call to the GB API. Defaults to TODO INSERT #}
+      * `GIANTBOMB_API_CALL_DELAY` : {Optional: The delay in seconds between each call to the GB API. Defaults to 1}
 
          (This is used to keep ytqa from sending too much traffic to the GB API at once. It also accounts for the majority of ytqa's run time.)
 

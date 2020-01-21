@@ -1,0 +1,7 @@
+defusedxml
+Flask
+google-cloud-pubsub
+google-cloud-storage
+gunicorn
+python-Levenshtein-wheels==0.13.1
+requests
